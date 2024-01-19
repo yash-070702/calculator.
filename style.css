@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    align-items: center;
+    width: 100vw;
+    height:100vh;
+    color:#e5e5e5;
+    background-image: url('./images/cal_background.avif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+
+.heading{
+    font-size: 2.7rem;
+    padding-top: 2rem;
+}
+@media(max-width:768px)
+{
+    .heading{
+        font-size: 2rem;
+        padding-top: 1.5rem;
+    }
+    .wrapper{
+        gap:1.7rem;
+    }
+}
+.text{
+    margin-right: 10%;
+   
+    font-size: 2.6rem;
+}
+.calculator{
+   border-radius: 1.5em;
+       height:500px;
+       width: 300px;
+
+}
+@media(max-width:768px)
+{
+    .calculator{
+        height: 70%;
+        width:270px;
+    }
+}
+.table-body{
+    width: 100%;
+    height: 75%;
+    padding: 1rem;
+   background-color:#18202a;
+   border-bottom-left-radius: 1.5rem;
+   border-bottom-right-radius: 1.5rem;
+   user-select: none;
+   border-spacing:12px 12px;
+
+}
+.display{
+    height:22%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color:#36474f;
+    
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+.row{
+    margin: 50px;
+    height: 40px;
+    font-weight: bold;
+    text-align:center; 
+    
+}
+
+.column{
+width: 25%;
+border-radius: 50%;
+font-size: 1.8rem;
+}
+.special{
+background-color:#e5e5e5;
+color:#18202a;
+}
+.equal{
+    background-color: #ff6531;
+    color:#e5e5e5;
+}
+
+.footer {
+    position: absolute;
+    top:95%;
+    text-align: center;
+    padding-top: 3px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 20px;
+    color: aliceblue
+}
+@media(max-width:320px)
+{
+    .footer{
+        top:95%;
+    }
+    .footer p {
+        
+        font-size: 15px;
+        
+    }
+}
+.bottom-nav {
+    position: absolute;
+    top: 91%;
+    left: 50%;
+    transform: translate(-50%,-97%);
+  }
+  .bottom-nav span {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  .bottom-nav ul {
+    margin: 0px;
+    padding: 0px;
+ 
+    list-style-type: none;
+  }
+  .bottom-nav li {
+    display: inline-block;
+   
+    
+  }
+  .bottom-nav .ta {
+    background-color:black;
+    margin: 0 2px;
+  }
+  .bottom-nav .tb {
+    background-color: white;
+    margin: 0 2px;
+  }
+ 
+  
