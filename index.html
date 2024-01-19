@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="shortcut icon" href="./images/cal_icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+      
+        <h1 class="heading">CALCULATOR</h1>
+    <div class="calculator">
+        <div class="display">
+            <div class="text"></div></div>
+        <table class="table-body">
+            <tr class="row">
+                <td class="column" onclick="allClear()">AC</td>
+                <td class="column" onclick="back()" >DLT</td>
+                <td class="column" onclick="insert('^')" >^</td>
+                <td class="column special" onclick="insert('%')" >%</td>
+            </tr>
+            <tr class="row">
+                <td class="column" onclick="insert(7)">7</td>
+                <td class="column" onclick="insert(8)">8</td>
+                <td class="column" onclick="insert(9)">9</td>
+                <td class="column special" onclick="insert('/')">÷</td>
+            </tr>
+            <tr class="row">
+                <td class="column" onclick="insert(4)">4</td>
+                <td class="column" onclick="insert(5)">5</td>
+                <td class="column" onclick="insert(6)">6</td>
+                <td class="column special" onclick="insert('*')" >*</td>
+            </tr>
+            <tr class="row">
+                <td class="column" onclick="insert(1)">1</td>
+                <td class="column" onclick="insert(2)">2</td>
+                <td class="column" onclick="insert(3)">3</td>
+                <td class="column  special" onclick="insert('-')" >-</td>
+            </tr>
+            <tr class="row">
+                <td class="column" onclick="insert('.')">.</td>
+                <td class="column" onclick="insert(0)">0</td>
+                <td class="column equal" onclick="equal()" >=</td>
+                <td class="column special" onclick="insert('+')" >+</td>
+            </tr>
+      
+        </table>
+    </div>
+    <div class="bottom-nav">
+        <ul>
+            <li><span onclick="fta()" class="ta"></span></li>
+            <li><span onclick="ftb()" class="tb"></span></li>
+          </ul>
+    </div>
+    <footer class="footer">
+        <p class="footer1">&copy; 2023 Yash Aggarwal . All Rights Reserved.</p>
+    </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
